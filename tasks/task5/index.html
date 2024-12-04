@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=6, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Document</title>
+    <style>
+
+        .navbar-nav{
+            border: none;
+           
+        }
+         .nav-item.home-item a {
+      background-color: yellow;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    .navbar-nav .nav-item {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    .hero-section {
+            background-image: url('./imges/pexels-cottonbro-6550721.jpg'); /* Replace with your actual image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            
+            padding: 80px 0;
+        }
+        .container1{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            text-align: left;
+            
+
+        }
+        .container1 img{
+            width: 250px;
+            height: 300px;
+            border-radius: 10%;
+            
+        }
+ 
+  .product-card img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px; /* Maintain a square aspect ratio for perfect circle */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image scales correctly within the circle */
+    margin: 0 auto; /* Center the image horizontally within the card */
+    display: block;
+  }
+  .product-card {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    height: 500px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-card p {
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-weight: bold;
+}
+
+.product-card button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg border fixed-top">
+        <div class="container-fluid navbar-inner">
+            <!-- <a class="navbar-brand text-white" href="#">Navbar</a> -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <ul class="navbar-nav ms-auto me-auto mb-2 pe-5 mb-lg-0">
+                    
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark fs-5" aria-current="page" href="#">Home</a>
+                        </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-5" href="#">About Us</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-5" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-5" href="#">Blog</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-5" href="#">shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-5" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-5" href="#">Contact Us</a>
+                    </li>  
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero-section text-center">
+        <div class="container1">
+            <div>
+                <h4>Welcome to FreshMeal</h4>
+                            <div class="bh"><h1>The World's Best <span class="text-warning">Shopping</span></h1></div> 
+                             <h1>Website</h1>
+                
+                <p style="color: black;">Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. Lorem Ipsum has been the industry's standard dummy.</p>
+                <a href="#" class="btn btn-warning">Read More</a>
+                <a href="#" class="btn btn-dark">Shop Now</a>
+            </div>
+            <div>
+                <img class="w-100" src="./imges/pexels-janetrangdoan-1132047.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="top-products p-3 mt-5 mb-8">
+        <div class="container">
+            
+            <h2 style="text-align: center;">Top Products</h2>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="product-card "data-aos="fade-up"
+                    data-aos-duration="3000"
+                    >
+                        <img src="./imges/pexels-janetrangdoan-1099680.jpg" alt="Summer Salad">
+                        <h5>Summer Salad</h5>
+                        <span class="fa fa-star checked " style="color: #FFD43B;"></span>
+                      <span class="fa fa-star checked" style="color: #FFD43B;"></span>
+                      <span class="fa fa-star checked" style="color: #FFD43B;"></span>
+                      <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>
+                      <span class="fa fa-star checked" style="color: #eae1e1f6;"></span>
+                      <span class="fa fa-star" style="color: #eae1e1f6;" ></span>
+                        <p>$12.5</p>
+                        <button class="btn btn-primary border border-color-dark ">
+                            <i class="fa-solid fa-cart-shopping " style="color: #ffff1d;"></i>
+                            Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="product-card mt-9 mb-8" data-aos="fade-up">
+                        <img src="./imges/pexels-cottonbro-6550721.jpg" alt="Russian Salad">
+                        <h5>Russian Salad</h5>
+                        <span class="fa fa-star checked " style="color: #FFD43B;"></span>
+                      <span class="fa fa-star checked" style="color: #FFD43B;"></span>
+                      <span class="fa fa-star checked" style="color: #FFD43B;"></span>
+                      <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>
+                      <span class="fa fa-star checked" style="color: #eae1e1f6;"></span>
+                      <span class="fa fa-star" style="color: #eae1e1f6;" ></span>
+                        <p>$12.5</p>
+                        <button class="btn btn-primary">
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffff1d;"></i>
+                            Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="product-card "data-aos="fade-up"
+                    data-aos-duration="2000">
+                        <img src="./imges/pexels-n-voitkevich-6942007.jpg" alt="Greek Salad">
+                        <h5>Greek Salad</h5>
+                        <span class="fa fa-star checked "style="color: #FFD43B;"></span>
+                      <span class="fa fa-star checked" style="color: #FFD43B;"></span>
+                      <span class="fa fa-star checked" style="color: #FFD43B;"></span>
+                      <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>
+                      <span class="fa fa-star" style="color: #eae1e1f6;"></span>
+                        <p>$12.5</p>
+                        <button class="btn btn-primary">
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffff1d;"></i>
+                           
+                            Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+    
+<script>
+            AOS.init();
+          </script>
+</html>
